@@ -1,13 +1,13 @@
 pipeline {
-agent any
-  environment {
-    PATH = "/opt/apache-mavem-3.6.3/bin:$PATH"
-              }
+agent none
+  tools {
+    maven 'maven-3.6.3' 
+  }
 stages {
 stage ('build code') {
 steps {
 echo 'started'
-sh "mvn clean install"
+sh 'mvn clean install'
 }
 
 }
