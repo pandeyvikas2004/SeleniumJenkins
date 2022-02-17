@@ -7,7 +7,7 @@ stages {
 stage ('build code') {
 steps {
 echo 'started'
-sh 'mvn clean install'
+bat 'mvn clean install'
 }
 
 }
