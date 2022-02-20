@@ -11,7 +11,8 @@ bat 'mvn clean install'
 }
 }
 stage ('Report code') {
-steps {echo "Test succeeded"
+steps {
+  echo "Test succeeded"
                      cucumber buildStatus: 'SUCCESS',
                                             failedFeaturesNumber: 0,
                                             failedScenariosNumber: 0,
@@ -22,5 +23,17 @@ steps {echo "Test succeeded"
 
       }
 }
+stage('Email')
+        {
+          Steps{
+        env.ForEmailPlugin = env.WORKSPACE
+        emailext mimeType: 'text/html',
+        body: '${FILE, path="overview-features.html"}',
+        subject: currentBuild.currentResult + " : " + env.JOB_NAME,
+        to: 'vikas.1.pandey@coforge.com'
+        }   
+        }
+
+
 }
 }
