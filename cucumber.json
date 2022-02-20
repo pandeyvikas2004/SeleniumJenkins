@@ -1,0 +1,104 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Fill the firts section of the form",
+        "description": "",
+        "id": "\"fill-the-form-with-details\";fill-the-firts-section-of-the-form",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10271085200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "open the URL of the application",
+            "match": {
+              "location": "FormFill.open_the_URL_of_the_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 198742099,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Enter the details of the first section",
+            "match": {
+              "location": "FormFill.enter_the_details_of_the_first_section()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 264603300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Values should br entered",
+            "match": {
+              "location": "FormFill.values_should_br_entered()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "Fill the second section of the form",
+        "description": "",
+        "id": "\"fill-the-form-with-details\";fill-the-second-section-of-the-form",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8650507400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "open the URL of the application",
+            "match": {
+              "location": "FormFill.open_the_URL_of_the_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 174739800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Enter the details of the second section",
+            "match": {
+              "location": "FormFill.enter_the_details_of_the_second_section()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 150413101,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Values should br entered",
+            "match": {
+              "location": "FormFill.values_should_br_entered()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "\"Fill the form with details\"",
+    "description": "",
+    "id": "\"fill-the-form-with-details\"",
+    "keyword": "Feature",
+    "uri": "FormFill.feature"
+  }
+]
