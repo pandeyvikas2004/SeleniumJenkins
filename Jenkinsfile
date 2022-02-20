@@ -25,7 +25,7 @@ steps {
 }
 stage('Email')
         {
-          Steps{
+          steps{
         env.ForEmailPlugin = env.WORKSPACE
         emailext mimeType: 'text/html',
         body: '${FILE, path="overview-features.html"}',
