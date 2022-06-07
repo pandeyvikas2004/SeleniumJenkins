@@ -17,7 +17,7 @@ public class LaunchBrowser {
 	{
 		System.setProperty("webdriver.chrome.driver","D:\\Personal\\Eclipse\\webdriver\\chromedriver\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
-		driver.get("http://testautomationpractice.blogspot.com");
+		driver.get("http://www.google.com");
 		driver.manage().window().maximize();
 	}
 }
